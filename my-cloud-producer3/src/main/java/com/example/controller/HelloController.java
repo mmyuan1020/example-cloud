@@ -6,10 +6,9 @@ import org.springframework.web.bind.annotation.RequestParam;
 import org.springframework.web.bind.annotation.RestController;
 
 @RestController
-//@Controller("hello")
 public class HelloController {
-	@RequestMapping({"/hello","/m/hello2"})
+	@RequestMapping("/hello")
 	public String hello(@RequestParam String name) {
-		return "hello " + name + "，this is first messge";
+		return "hello " + name + "，this is first messge, 这是服务提供者2，请刷新浏览器是否有自动负载均衡";
 	}
 }
