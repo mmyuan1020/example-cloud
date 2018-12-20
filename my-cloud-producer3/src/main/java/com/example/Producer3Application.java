@@ -6,9 +6,9 @@ import org.springframework.cloud.client.discovery.EnableDiscoveryClient;
 
 @SpringBootApplication
 @EnableDiscoveryClient
-public class Producer2Application {
+public class Producer3Application {
 
 	public static void main(String[] args) {
-		SpringApplication.run(Producer2Application.class, args);
+		SpringApplication.run(Producer3Application.class, args);
 	}
 }
