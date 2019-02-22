@@ -33,7 +33,7 @@ public class Consumer {
 
 			
 			while (true) {
-				TextMessage message = (TextMessage)consumer.receive();
+				TextMessage message = (TextMessage)consumer.receive(10000); //10000就接收超时时间
 				if(message!=null) {
 					System.out.println(message.getText());
 				} else {
