@@ -33,7 +33,7 @@ public class Consumer {
 
 			
 			while (true) {
-				TextMessage message = (TextMessage)consumer.receive(10000);
+				TextMessage message = (TextMessage)consumer.receive();
 				if(message!=null) {
 					System.out.println(message.getText());
 				} else {
